@@ -24,7 +24,7 @@ from streamlit_lottie import st_lottie
 nltk.download('punkt')
 nltk.download(('wordnet')
               
-def load_lottieurl(url):
+def load_lottieurl(url: str):
      r=requests.get(url)
      if r.status_code !=200:
          return None
