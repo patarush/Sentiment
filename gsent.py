@@ -25,10 +25,10 @@ nltk.download('punkt')
 nltk.download(('wordnet')
               
 def load_lottieurl(url:str):
-              r=requests.get(url)
-              if r.status_code !=200:
-                return None
-              return r.json()
+     r=requests.get(url)
+     if r.status_code !=200:
+         return None
+     return r.json()
 
 hello=load_lottieurl('https://assets3.lottiefiles.com/packages/lf20_dhlmjljy.json')
 #https://assets6.lottiefiles.com/packages/lf20_fi2zcy9b.json
